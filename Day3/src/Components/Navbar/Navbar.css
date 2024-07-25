@@ -1,0 +1,85 @@
+/* src/Components/Navbar/Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #820808; /* Navbar background color */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-title {
+    font-size: 24px;
+    color: #fff;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: #ffcc00; /* Color on hover */
+}
+
+/* Style for the dropdown button */
+.navbar-dropdown button {
+    background: none; /* Remove default background */
+    border: none; /* Remove default border */
+    color: #fff; /* Match link color */
+    font-size: 18px; /* Match link font size */
+    cursor: pointer; /* Pointer cursor to indicate it’s clickable */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.navbar-dropdown button:hover {
+    color: #ffcc00; /* Match link hover color */
+}
+
+.navbar-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Dropdown background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 4px; /* Optional: adds rounded corners */
+    top: 100%; /* Positions the dropdown just below the button */
+    left: 0; /* Aligns dropdown to the left edge of the button */
+}
+
+.navbar-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333; /* Text color inside dropdown */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Background color on hover */
+}
