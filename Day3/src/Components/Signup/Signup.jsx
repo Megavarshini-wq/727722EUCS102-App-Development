@@ -1,6 +1,6 @@
-// src/Components/Signup/signup.jsx
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import './Signup.css';
 
 const Signup = () => {
@@ -9,7 +9,7 @@ const Signup = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         // Check if passwords match
@@ -18,13 +18,17 @@ const Signup = () => {
             return;
         }
 
-        // Store credentials in local storage
-        localStorage.setItem('username', username);
-        localStorage.setItem('password', password);
+        try {
+            // Save credentials in db.json
+            await axios.post('http://localhost:3001/users', { username, password });
 
-        // Navigate to login page after successful signup
-        alert('Signup successful!');
-        navigate('/login');
+            // Navigate to login page after successful signup
+            alert('Signup successful!');
+            navigate('/login');
+        } catch (error) {
+            console.error('Error signing up:', error);
+            alert('Signup failed. Please try again.');
+        }
     };
 
     return (

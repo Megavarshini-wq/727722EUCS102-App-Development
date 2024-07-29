@@ -1,31 +1,22 @@
-
-// src/Components/Login/Login.jsx
+// src/Components/AdminLogin/AdminLogin.jsx
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { useAuth } from '../../Context/AuthContext';
-import './Login.css';
+import './AdminLogin.css';
 
-const Login = () => {
+const AdminLogin = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
-    const { login } = useAuth();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         try {
-            const response = await axios.get('http://localhost:3001/users');
-            const users = response.data;
-
-            const user = users.find(u => u.username === username && u.password === password);
-
-            if (user) {
-                login();
-                navigate('/');
+            if (username === 'admin@gmail.com' && password === 'Admin12345') {
+                navigate('/admin-dashboard'); // Replace with your admin dashboard route
             } else {
-                alert('Invalid credentials');
+                alert('Invalid admin credentials');
             }
         } catch (error) {
             console.error('Error logging in:', error);
@@ -36,7 +27,7 @@ const Login = () => {
     return (
         <div className="login-container">
             <form className="login-form" onSubmit={handleSubmit}>
-                <h2>LOGIN</h2>
+                <h2>ADMIN LOGIN</h2>
                 <label>
                     Username:
                     <input
@@ -56,10 +47,10 @@ const Login = () => {
                     />
                 </label>
                 <button type="submit">Login</button>
-                <p>Don't have an account? <Link to="/signup">Signup</Link></p>
+                {/* <p>Don't have an account? <Link to="/signup">Signup</Link></p> */}
             </form>
         </div>
     );
 };
 
-export default Login;
+export default AdminLogin;
