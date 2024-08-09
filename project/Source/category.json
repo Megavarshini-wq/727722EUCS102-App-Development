@@ -1,0 +1,83 @@
+{
+  "category": [
+    {
+      "id": "1",
+      "title": "The Thirsty Crow",
+      "coverImage": "/Books/img8.jpeg",
+      "pdf": "The_thirsty_crow.pdf",
+      "category": "AGE 3-6"
+    },
+    {
+      "id": "2",
+      "title": "The Fox and The Grapes",
+      "coverImage": "/Books/img9.jpeg",
+      "pdf": "HungryFoxandGrapes.pdf",
+      "category": "AGE 3-6"
+    },
+    {
+      "id": "3",
+      "title": "The Hare and The Tortise",
+      "coverImage": "/Books/img10.jpg",
+      "pdf": "tortise.pdf",
+      "category": "AGE 3-6"
+    },
+    {
+      "id": "4",
+      "title": "The Lion and The Mouse",
+      "coverImage": "/Books/img11.jpg",
+      "pdf": "LionAndMouse.pdf",
+      "category": "AGE 3-6"
+    },
+    {
+      "id": "5",
+      "title": "The Lazy Donkey",
+      "coverImage": "/Books/img12.jpeg",
+      "pdf": "LazyDonkey.pdf",
+      "category": "AGE 3-6"
+    },
+    {
+      "id": "6",
+      "title": "The Cap Seller and The Monkeys",
+      "coverImage": "/Books/img13.jpg",
+      "pdf": "Monkey.pdf",
+      "category": "AGE 3-6"
+    },
+    {
+      "id": "7",
+      "title": "Akbar and Birbal",
+      "coverImage": "/Books/img14.jpeg",
+      "category": "ABOVE 10"
+    },
+    {
+      "id": "8",
+      "title": "The Enchanted Forest",
+      "coverImage": "/Books/img15.jpeg",
+      "category": "AGE 7-10"
+    },
+    {
+      "id": "9",
+      "title": "The Elves and The Shoe maker",
+      "coverImage": "/Books/img16.jpeg",
+      "category": "AGE 7-10"
+    },
+    {
+      "id": "10",
+      "title": "The Ant and The Grasshopper",
+      "coverImage": "/Books/img17.jpeg",
+      "category": "AGE 7-10"
+    },
+    {
+      "id": "11",
+      "title": "The Honest Woodcutter",
+      "coverImage": "/Books/img19.jpeg",
+      "pdf": "woodcutter.pdf",
+      "category": "AGE 3-6"
+    },
+    {
+      "id": "12",
+      "title": "Dilly",
+      "coverImage": "/Books/img18.jpeg",
+      "category": "ABOVE 10"
+    }
+  ]
+}
