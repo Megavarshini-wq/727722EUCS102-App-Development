@@ -1,0 +1,96 @@
+/* src/Components/AdminLogin/AdminLogin.css */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Added to position the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element doesn't overflow */
+}
+
+.login-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("C:/Users/HP/Downloads/kids.jpg"); /* Update this path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Places the background behind other content */
+    animation: zoomIn 10s ease-in-out infinite alternate; /* Adds the zoom-in effect */
+}
+
+.login-form {
+    background-color: #ffe7af;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    z-index: 1; /* Ensures the form is above the background */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #013e7a;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333;
+}
+
+.login-form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #7992ab;
+}
+
+.login-form p {
+    margin-top: 15px;
+    color: #333;
+}
+
+.login-form a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}

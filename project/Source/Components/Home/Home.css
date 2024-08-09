@@ -1,0 +1,18 @@
+/* src/Components/Home/home.css */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('C:\Users\HP\Downloads\ch.jpg'); /* Path relative to the public folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Adjust text color for better visibility */
+}
+
+.home-content {
+    text-align: center;
+    color: black;
+    margin-top: -570px;
+}

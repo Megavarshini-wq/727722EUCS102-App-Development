@@ -1,0 +1,45 @@
+.videos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.video-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.video-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.video-thumbnail {
+    width: 250px; /* Wider width for horizontal appearance */
+    height: 150px; /* Adjusted height for a horizontal ratio */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensures the thumbnail fits well */
+}
+
+.video-title {
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
