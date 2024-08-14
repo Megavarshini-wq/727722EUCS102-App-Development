@@ -1,0 +1,70 @@
+{
+    "books": [
+    {
+        "id": 1,
+        "title": "Hansel and Gretel",
+        "coverImage": "/Books/book6.jpg",
+        "pdf":"Hansel-and-Gretel.pdf"
+    },
+    {
+        "id": 2,
+        "title": "Sleeping Beauty",
+        "coverImage": "/Books/book1.jpg",
+        "pdf":"SleepingBeauty.pdf"
+    },
+    {
+        "id": 3,
+        "title": "Pinocchio",
+        "coverImage": "/Books/book4.jpg",
+        "pdf":"Pinocchio.pdf"
+    },
+    {
+        "id": 4,
+        "title": "Beauty and the Beast",
+        "coverImage": "/Books/book2.jpg",
+        "pdf":"beautyAndBeast.pdf"
+    },
+    {
+        "id": 5,
+        "title": "Aladdin and his Magic Lamp",
+        "coverImage": "/Books/img1.jpg",
+        "pdf":"Alladin.pdf"
+    },
+    {
+        "id": 6,
+        "title": "Goldilocks and The Three Bears",
+        "coverImage": "/Books/img2.jpg",
+        "pdf":"goldilocks.pdf"
+    },
+    {
+        "id": 7,
+        "title": "The Frog Prince",
+        "coverImage": "/Books/img3.jpg",
+        "pdf":"The-Frog-Prince.pdf"
+    },
+    {
+        "id": 8,
+        "title": "Snow White",
+        "coverImage": "/Books/img4.jpg",
+        "pdf":"Snow-white.pdf"
+    },
+    {
+        "id": 9,
+        "title": "Rapunzel",
+        "coverImage": "/Books/img5.jpg",
+        "pdf":"Rapunzel.pdf"
+    },
+    {
+        "id": 11,
+        "title": "Little Red Riding Hood",
+        "coverImage": "/Books/img7.jpg",
+        "pdf":"Red-Riding-Hood.pdf"
+    },
+    {
+        "id": 12,
+        "title": "Jack and The Bean Stack",
+        "coverImage": "/Books/img20.jpg",
+        "pdf":"JackBean.pdf"
+    }
+]
+}

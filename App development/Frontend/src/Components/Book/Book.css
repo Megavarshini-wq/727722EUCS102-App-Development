@@ -1,0 +1,36 @@
+/* Books.css */
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 books per row */
+    gap: 20px; /* Space between books */
+    padding: 10px; /* Padding around the container */
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align text and image */
+    text-align: center; /* Center-align text */
+}
+
+.book-image {
+    width: 250px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
+    border-radius: 10px; /* Adjust border-radius as needed */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.book-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.book-title {
+    margin-top: 10px; /* Space between image and title */
+    font-size: 16px; /* Adjust font size as needed */
+}
+h2{
+    text-align: center;
+    color: rgb(165, 42, 42);
+}

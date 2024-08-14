@@ -1,0 +1,95 @@
+/* src/Components/Signup/signup.css */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.signup-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("C:/Users/HP/Downloads/kids.jpg"); /* Update this path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: zoomIn 10s ease-in-out infinite alternate;
+}
+
+.signup-form {
+    background-color: #ffe7af;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    z-index: 1;
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+    color: #013e7a;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333;
+}
+
+.signup-form input {
+    width: calc(100% - 22px); /* Adjusting for padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.signup-form input:focus {
+    outline: none;
+    border-color: #0c0c0c; /* Match the border color to the outline color */
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #7992ab;
+}
+
+.signup-form p {
+    margin-top: 15px;
+    color: #333;
+}
+
+.signup-form a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+}

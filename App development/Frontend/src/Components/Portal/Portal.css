@@ -1,0 +1,46 @@
+.portal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.portal-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(153, 58, 85);
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.video-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.video-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.video-thumbnail {
+    width: 250px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensures the thumbnail fits well */
+}
+
+.video-title {
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}

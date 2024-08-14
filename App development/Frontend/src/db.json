@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "e993",
+      "username": "mega@gmail.com",
+      "password": "mega_2004"
+    },
+    {
+      "id": "0b41",
+      "username": "rakshi@gmail.com",
+      "password": "rakshi2007"
+    },
+    {
+      "id": "f187",
+      "username": "viji@gmail.com",
+      "password": "vijayarani"
+    },
+    {
+      "id": "0106",
+      "username": "kavya@gmail.com",
+      "password": "kavya123456"
+    },
+    {
+      "id": "5753",
+      "username": "varsh@gmail.com",
+      "password": "varshini"
+    },
+    {
+      "id": "5963",
+      "username": "Nigitha",
+      "password": "nigi789"
+    }
+  ]
+}

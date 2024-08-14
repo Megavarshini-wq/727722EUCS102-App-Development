@@ -1,0 +1,27 @@
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.home-content {
+    text-align: center;
+    color: black;
+    margin-top: -570px;
+} 
